@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script
+</head>
+<body>
+    <!-- Navbar starts -->
+    <div class="navbar bg-[#F85559]">
+        <div class="navbar-start rounded-2xl">
+          <div class="dropdown">
+            
+            <ul tabindex="0" class="menu menu-horizontal mt-3 z-[1] p-2  w-65 text-white">
+              <li><a>Homepage</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-center">
+            <img src="./B8A3-fruit-brust-main/images/logo.png">
+          <a class="btn btn-ghost normal-case text-xl text-white">Fruit Burst</a>
+        </div>
+        <div class="navbar-end">
+            <div class="form-control">
+                <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto px-18" />
+              </div>
+          <button class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+          </button>
+          <button class="btn btn-ghost btn-circle">
+          </button>
+        </div>
+      </div>
+
+
+      <!-- Navbar ends -->
+
+      <!-- Slider starts -->
+      <main>
+        <div class="carousel w-full">
+            <!-- Slider 1 -->
+
+            <div id="slide1" class="carousel-item relative w-full"
+            style="background-image: url(./B8A3-fruit-brust-main/images/banner1.png);"
+            class="w-full items-center justify-center m-auto text-center bg-center" >
+              
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+              <div class="text-black bg-[#FFFF] justify-center text-center">
+                <h2>Exotic tastes at your doorstep</h2>
+                <p>We supply highly quality organic products</p>
+                <button>Shop Now</button>
+            </div>
+            </div> 
+            
+            <!-- Slider 2 -->
+
+            <div id="slide2" class="carousel-item relative w-full"
+            style="background-image: url(./B8A3-fruit-brust-main/images/banner2.png);"
+              class="w-full items-center justify-center m-auto text-center" >
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <!-- Slider 3 -->
+
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="./B8A3-fruit-brust-main/images/banner3.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <!-- Slider 4 -->
+
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="./B8A3-fruit-brust-main/images/banner4.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide ends -->
+          <!-- Cards starts -->
+          
+          <div class="flex items-center justify-between mx-24">
+            <div>
+            <h3 class="text-2xl font-bold my-6">Deal of the day</h3>
+            <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br> Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+          <div>
+              <div class="flex gap-5">
+                <div>
+                  <span class="countdown font-mono text-4xl">
+                    <span style="--value:15;"></span>
+                  </span>
+                  days
+                </div> 
+                <div>
+                  <span class="countdown font-mono text-4xl">
+                    <span style="--value:10;"></span>
+                  </span>
+                  hours
+                </div> 
+                <div>
+                  <span class="countdown font-mono text-4xl">
+                    <span style="--value:24;"></span>
+                  </span>
+                  min
+                </div> 
+                <div>
+                  <span class="countdown font-mono text-4xl">
+                    <span style="--value:30;"></span>
+                  </span>
+                  sec
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="flex gap-8">
+          <!-- Card 1 -->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./B8A3-fruit-brust-main/images/fruit6.png" alt="Fruits" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <hr class="h-px w-44">
+              <p>Apples</p>
+              <div>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-[#F85559] font-bold">Details</p>
+            </div>
+          </div>
+<!-- Card 2 -->
+<div class="card w-96 bg-base-100 shadow-xl">
+  <figure class="px-10 pt-10">
+    <img src="./B8A3-fruit-brust-main/images/fruit7.png" alt="Shoes" class="rounded-xl" />
+  </figure>
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">12.90$ - 18.85$</h2>
+    <hr class="h-px w-44">
+    <p>Orange</p>
+    <div>
+      <i class="fa-solid fa-star"></i>
+    </div>
+    <p class="text-[#F85559] font-bold">Details</p>
+  </div>
+</div>
+<!-- Card 3 -->
+<div class="card w-96 bg-base-100 shadow-xl">
+  <figure class="px-10 pt-10">
+    <img src="./B8A3-fruit-brust-main/images/fruit8.png" alt="Shoes" class="rounded-xl" />
+  </figure>
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">12.90$ - 18.85$</h2>
+    <hr class="h-px w-44">
+    <p>Red Dragon</p>
+    <div>
+      <i class="fa-solid fa-star"></i>
+    </div>
+    <p class="text-[#F85559] font-bold">Details</p>
+  </div>
+</div>
+<!-- Card 4 -->
+<div class="card w-96 bg-base-100 shadow-xl">
+  <figure class="px-10 pt-10">
+    <img src="./B8A3-fruit-brust-main/images/fruit9.png" alt="Shoes" class="rounded-xl" />
+  </figure>
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">12.90$ - 18.85$</h2>
+    <hr class="h-px w-44">
+    <p>Banana</p>
+   
+      <i class="fa-solid fa-star"></i>
+    
+    <p class="text-[#F85559] font-bold">Details</p>
+  </div>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center mt-10">
+<button class="btn btn-outline btn-shop all items-center bg-[#F85559] text-white justify-center m-auto">Shop All</button>
+  </div>
+  <!-- Cards ends -->
+
+  <!-- Team starts -->
+  <div style="background-image: url(./B8A3-fruit-brust-main/images/team.png);"
+  class="w-full h-screen bg-center mt-20 items-center bg-opacity-75">
+  <div class="items-center text-center text-white mt-8 pt-24">
+<h1 class="font-bold text-3xl pb-5">Meet the team section</h1>
+<p class="text-xs">Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br> Latin literature from 45 BC, making it over 2000 years old.</p>
+</div>
+<div class="flex gap-24 ml-28 mt-10">
+    <div class="mem-one text-white text-center">
+      <div class="pb-5">
+      <img src="./B8A3-fruit-brust-main/images/member1.png">
+    </div>
+      <h1 class="text-lg font-medium">Awlad Hossain</h1>
+      <p class="text-sm font-light">Fruits Expert</p>
+    </div>
+    <div class="mem-two text-white text-center">
+      <div class="pb-5">
+      <img src="./B8A3-fruit-brust-main/images/member2.png">
+    </div>
+      <h1 class="text-lg font-medium">Safia Chowdhury</h1>
+      <p class="text-sm font-light">Fruits Expert</p>
+    </div>
+    <div class="mem-three text-white text-center">
+      <div class="pb-5">
+        <img src="./B8A3-fruit-brust-main/images/member3.png">
+      </div>
+      <h1 class="text-lg font-medium">Rokib Hossain</h1>
+      <p class="text-sm font-light">Fruits Expert</p>
+    </div>
+    <div class="mem-four text-white text-center">
+      <div class="pb-5">
+      <img src="./B8A3-fruit-brust-main/images/member4.png">
+    </div>
+      <h1 class="text-lg font-medium">Chaity</h1>
+      <p class="text-sm font-light">Fruits Expert</p>
+    </div>
+  </div>
+</div>
+
+      </main>
+      <footer>
+        <div class="w-full h-screen bg-[#121212]">
+          <div class="flex items-center justify-center mt-30 pt-24">
+            <img src="./B8A3-fruit-brust-main/images/logo.png">
+          <a class="btn btn-ghost normal-case text-2xl text-white">Fruit Burst</a>
+          </div>
+          <div class="flex text-white justify-center gap-20 pt-10">
+            
+              <a>Home</a>
+              <a>About Us</a>
+              <a>Shop</a>
+              <a>All Fruits</a>
+              <a>Support</a>
+              <a>My Account</a>
+            
+          </div>
+          <div class="flex w-8 h-8 gap-12 items-center ml-48 mt-14 ">
+            <img src="./B8A3-fruit-brust-main/image/twitter.png">
+            <img src="./B8A3-fruit-brust-main/image/facebook.png">
+            <img src="./B8A3-fruit-brust-main/image/utube.png">
+            <img src="./B8A3-fruit-brust-main/image/linkdin.png">
+            <img src="./B8A3-fruit-brust-main/image/insta.webp">
+            <img src="./B8A3-fruit-brust-main/image/apple.png">
+
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
